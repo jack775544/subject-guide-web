@@ -66,7 +66,7 @@ function makeIndex{
             $pattern.Matches($_) | ForEach-Object {
                 $_ = $_.ToString().trim("{", "}")
                 $name = $_.Split('/')
-                $content += "<tr><td><a href='subjects/" + $name[2] + ".html'>$name</a><td></tr>"
+                $content += "<tr><td><a href='subjects/" + $name[2] + ".html'>" + $name[2] + "</a><td></tr>"
             }
         }
     }
