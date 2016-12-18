@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+
+{% assign course = site.data.ENGG4020 %}
+<html>
+    <head>
+        <title>{{ course.title }}</title>
+    </head>
+    <body>
+        <h1>{{ course.code }} - {{ course.title }}</h1>
+
+        <h2>Rating</h2>
+        <p>
+            {{ course.score }}/5
+        </p>
+
+        <h2>Coordinator:</h2> 
+        <p>
+            {{ course.coordinator }} 
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            {{ course.contact }}
+        </p>
+
+        <h2>Assessment</h2>
+        <p>
+            {{ course.assessment }}
+        </p>
+
+        <h2>Review:</h2>
+        <p>
+            {{ course.review }}
+        </p>
+
+        <h2>Preparation</h2>
+        <p>
+            {{ course.preparation }}
+        </p>
+    </body>
+</html>

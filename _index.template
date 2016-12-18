@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<html>
+    <head>
+        <title>Subject Guide</title>
+    </head>
+    <body>
+        <table>
+            <th>Subjects</th>
+            {0}
+        </table>
+    </body>
+</html>

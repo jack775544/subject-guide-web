@@ -1,0 +1,11 @@
+{
+    "assessment":  "\u003cbr/\u003eexample \u0026 example% \u0026 example \u003cbr/\u003e",
+    "review":  "\u003cbr/\u003eNot a difficult course provided you keep up with course materials, but assignments will take a good chunk of time. Matt and Tutors extremely helpful and very short response times. \u003cbr/\u003eThrough the course you will cover the different parts that make up an operating system kernel (especially a linux kernel), and assignments focus on concurrency and display (X11, but almost any display driver will be accepted). \u003cbr/\u003eNote that while the textbook is mandatory, it is extremely useful. You will cover the entirety of the textbook throughout the course. \u003cbr/\u003eThe exam is fairly easy to prepare for, but going in without doing previous year\u0027s exams will result in failure. \u003cbr/\u003eIf you enjoyed 2310, I would highly recommend this course. \u003cbr/\u003e",
+    "coordinator":  "Dr Matthew D\u0027Souza (m.dsouza@uq.edu.au)",
+    "contact":  "1L, 1T, 2P",
+    "score":  "4",
+    "code":  "COMP3301",
+    "title":  "Operating Systems Architecture",
+    "preparation":  "\u003cbr/\u003eitem thingo\u003cbr/\u003e",
+    "prereq":  "COMP2303 or CSSE2310"
+}
