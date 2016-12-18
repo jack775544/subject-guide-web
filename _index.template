@@ -8,7 +8,6 @@ layout: default
     </head>
     <body>
         <table>
-            <th>Subjects</th>
             {0}
         </table>
     </body>

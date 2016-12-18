@@ -7,8 +7,8 @@ function main{
         $file = Get-Content -Raw (Join-Path $subjectRoot -ChildPath $_)
         $itemMap = parse $file
         save $itemMap
-        makeIndex
-    }    
+    }
+    makeIndex $itemMap
 }
 
 function parse{
@@ -53,12 +53,24 @@ function save{
 }
 
 function makeIndex{
-    $indexTemplate = Get-Content -Raw _index.template
-    $list = ""
-    Get-ChildItem subjects | ForEach-Object {
-        $list += "<tr><td><a href='subjects/$_'>" + $_.BaseName + "</a></td></tr>"
+    $content = ""
+    $subjectFile = Join-Path subject-guide -ChildPath tex | Join-Path -ChildPath courses | Join-Path -ChildPath subjects.tex
+    $pattern = [regex] "{([\s\S]*?)}"
+    Get-Content $subjectFile | ForEach-Object {
+        if ($_.StartsWith('\section')) {
+            $pattern.Matches($_) | ForEach-Object {
+                $_ = $_.ToString().trim("{", "}")
+                $content += "<tr><td><b>$_</b><td></tr>"
+            }
+        } elseif ($_.StartsWith('\input')) {
+            $pattern.Matches($_) | ForEach-Object {
+                $_ = $_.ToString().trim("{", "}")
+                $name = $_.Split('/')
+                $content += "<tr><td><a href='subjects/" + $name[2] + ".html'>$name</a><td></tr>"
+            }
+        }
     }
-    $indexTemplate -f $list | Out-File -Encoding ascii index.html
+    (Get-Content -Raw _index.template) -f $content | Out-File -Encoding ascii index.html
 }
 
 main
