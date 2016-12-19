@@ -6,6 +6,6 @@
     "score":  "5",
     "code":  "INFS4205",
     "title":  "Advanced Techniques for High Dimensional Data",
-    "preparation":  "\u003cbr/\u003eitem Have a good understanding of INFS2200 course content, especially the indexing data structures. Basic knowledge of data stuctures and algorithms is also helpful.\u003cbr/\u003e",
+    "preparation":  "\u003cbr/\u003e\u003cli\u003e Have a good understanding of INFS2200 course content, especially the indexing data structures. Basic knowledge of data stuctures and algorithms is also helpful.\u003cbr/\u003e",
     "prereq":  "INFS2200"
 }

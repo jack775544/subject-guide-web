@@ -31,7 +31,7 @@ function parse{
     $values = @()
     $pattern = [regex] "{([\s\S]*?)}"
     $pattern.Matches($file) | ForEach-Object {
-        $values = $values += ($_.ToString().trim("{", "}") -replace "\\", "" -replace "  ", "" -replace "\r\n", "<br/>")
+        $values = $values += ($_.ToString().trim("{", "}") -replace "\\item", "<li>" -replace "\\", "" -replace "  ", "" -replace "\r\n", "<br/>")
     }
 
     # Combine the arrays into an associative list

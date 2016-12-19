@@ -6,6 +6,6 @@
     "score":  "4",
     "code":  "DECO2800",
     "title":  "Design Computing Studio 2",
-    "preparation":  "\u003cbr/\u003eitem thingo\u003cbr/\u003e",
+    "preparation":  "\u003cbr/\u003e\u003cli\u003e thingo\u003cbr/\u003e",
     "prereq":  "(DECO1800 or ENGG1200) + (CSSE2002 or INFS2200)"
 }

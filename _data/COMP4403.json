@@ -6,6 +6,6 @@
     "score":  "5",
     "code":  "COMP4403",
     "title":  "Compilers and Interpreters",
-    "preparation":  "\u003cbr/\u003eitem Complete CSSE2010 and COMP3506, and in particular understand assembly code, state machines and tree data structures\u003cbr/\u003eitem Do background reading on formal language theory (e.g. formal grammars, the Chomsky Heirarchy)\u003cbr/\u003e",
+    "preparation":  "\u003cbr/\u003e\u003cli\u003e Complete CSSE2010 and COMP3506, and in particular understand assembly code, state machines and tree data structures\u003cbr/\u003e\u003cli\u003e Do background reading on formal language theory (e.g. formal grammars, the Chomsky Heirarchy)\u003cbr/\u003e",
     "prereq":  "COMP2502 or COMP3506"
 }

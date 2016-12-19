@@ -6,6 +6,6 @@
     "score":  "4",
     "code":  "MATH1052",
     "title":  "Calculus and Differential Equations",
-    "preparation":  "\u003cbr/\u003eitem thingo\u003cbr/\u003e",
+    "preparation":  "\u003cbr/\u003e\u003cli\u003e thingo\u003cbr/\u003e",
     "prereq":  "MATH1050 or SA Yr 12 Maths C"
 }
