@@ -2,13 +2,15 @@ $htmlTemplate = Get-Content -Raw _subject.template
 
 function main{
     $subjectRoot = Join-Path subject-guide -ChildPath tex | Join-Path -ChildPath courses | Join-Path -ChildPath subjects  
+    $allCourses = @()
     Get-ChildItem $subjectRoot | ForEach-Object {
         $itemMap = @()
         $file = Get-Content -Raw (Join-Path $subjectRoot -ChildPath $_)
-        $itemMap = parse $file
-        save $itemMap
+        $itemMap = parse -fileName $file
+        save -itemMap $itemMap
+        $allCourses += @{$itemMap['code'] = $itemMap}
     }
-    makeIndex $itemMap
+    makeIndex -itemMap $allCourses
 }
 
 function parse{
@@ -53,6 +55,9 @@ function save{
 }
 
 function makeIndex{
+    Param(
+        $itemMap
+    )
     $content = ""
     $subjectFile = Join-Path subject-guide -ChildPath tex | Join-Path -ChildPath courses | Join-Path -ChildPath subjects.tex
     $pattern = [regex] "{([\s\S]*?)}"
@@ -66,7 +71,8 @@ function makeIndex{
             $pattern.Matches($_) | ForEach-Object {
                 $_ = $_.ToString().trim("{", "}")
                 $name = $_.Split('/')
-                $content += "<tr><td><a href='subjects/" + $name[2] + ".html'>" + $name[2] + "</a><td></tr>"
+                $code = $name[2]
+                $content += "<tr><td><a href='subjects/" + $code + ".html'>" + $code + " - " + ($itemMap.Values | Where-Object {$_.code -eq $code}).title + "</a><td></tr>"
             }
         }
     }
