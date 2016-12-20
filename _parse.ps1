@@ -65,14 +65,14 @@ function makeIndex{
         if ($_.StartsWith('\section')) {
             $pattern.Matches($_) | ForEach-Object {
                 $_ = $_.ToString().trim("{", "}") -replace "\\&", "&"
-                $content += "</ul></div><div class='subjects'><h2>$_</h2><ul class='subjectlist'>"
+                $content += "</ul></div><div class='subjects'><h2>$_</h2><ul class='subjectlist'>`n"
             }
         } elseif ($_.StartsWith('\input')) {
             $pattern.Matches($_) | ForEach-Object {
                 $_ = $_.ToString().trim("{", "}")
                 $name = $_.Split('/')
                 $code = $name[2]
-                $content += "<li><a href='subjects/" + $code + ".html'>" + $code + " - " + ($itemMap.Values | Where-Object {$_.code -eq $code}).title + "</a>"
+                $content += "<li><a href='subjects/" + $code + ".html'>" + $code + " - " + ($itemMap.Values | Where-Object {$_.code -eq $code}).title + "</a>`n"
             }
         }
     }

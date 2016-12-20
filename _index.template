@@ -5,7 +5,7 @@ layout: default
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <title>Subject Guide</title>
     </head>
@@ -17,13 +17,13 @@ layout: default
                 <p>This guide offers an overview of the courses undertaken by Software Engineering,
                 Computer Science, and Information and Technology. It aims to help students make
                 informed choices about their study at UQ.</p>
-                <p>It is produced by the UQ Computing Society, and is in no way an official UQ guide —
+                <p>It is produced by the UQ Computing Society, and is in no way an official UQ guide ï¿½
                 for academic advice, be sure to talk to your school or faculty. All oppionions in this
                 document are of the original Authors and not of UQ Computing Society.</p>
             </div>
-            <table>
+            <div class="allsubjects">
                 {0}
-            </table>
+            </div>
         </div>
     </body>
 </html>
