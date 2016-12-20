@@ -58,24 +58,25 @@ function makeIndex{
     Param(
         $itemMap
     )
-    $content = ""
+    $content = "<div><ul>"
     $subjectFile = Join-Path subject-guide -ChildPath tex | Join-Path -ChildPath courses | Join-Path -ChildPath subjects.tex
     $pattern = [regex] "{([\s\S]*?)}"
     Get-Content $subjectFile | ForEach-Object {
         if ($_.StartsWith('\section')) {
             $pattern.Matches($_) | ForEach-Object {
-                $_ = $_.ToString().trim("{", "}")
-                $content += "<tr><td><b>$_</b><td></tr>"
+                $_ = $_.ToString().trim("{", "}") -replace "\\&", "&"
+                $content += "</ul></div><div><h2>$_</h2><ul class='subjectlist'>"
             }
         } elseif ($_.StartsWith('\input')) {
             $pattern.Matches($_) | ForEach-Object {
                 $_ = $_.ToString().trim("{", "}")
                 $name = $_.Split('/')
                 $code = $name[2]
-                $content += "<tr><td><a href='subjects/" + $code + ".html'>" + $code + " - " + ($itemMap.Values | Where-Object {$_.code -eq $code}).title + "</a><td></tr>"
+                $content += "<li><a href='subjects/" + $code + ".html'>" + $code + " - " + ($itemMap.Values | Where-Object {$_.code -eq $code}).title + "</a>"
             }
         }
     }
+    $content += "</ul></div>"
     (Get-Content -Raw _index.template) -f $content | Out-File -Encoding ascii index.html
 }
 

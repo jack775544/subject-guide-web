@@ -6,39 +6,46 @@ layout: default
 {% assign course = site.data.COMS3000 %}
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <title>{{ course.title }}</title>
     </head>
     <body>
-        <h1>{{ course.code }} - {{ course.title }}</h1>
+        <div class='content'>
+            <h1>{{ course.code }} - {{ course.title }}</h1>
 
-        <h2>Rating</h2>
-        <p>
-            {{ course.score }}/5
-        </p>
+            <h2>Rating</h2>
+            <p>
+                {{ course.score }}/5
+            </p>
 
-        <h2>Coordinator:</h2> 
-        <p>
-            {{ course.coordinator }} 
-        </p>
+            <h2>Coordinator:</h2> 
+            <p>
+                {{ course.coordinator }} 
+            </p>
 
-        <h2>Contact</h2>
-        <p>
-            {{ course.contact }}
-        </p>
+            <h2>Contact</h2>
+            <p>
+                {{ course.contact }}
+            </p>
 
-        <h2>Assessment</h2>
-        <p>
-            {{ course.assessment }}
-        </p>
+            <h2>Assessment</h2>
+            <p>
+                {{ course.assessment }}
+            </p>
 
-        <h2>Review:</h2>
-        <p>
-            {{ course.review }}
-        </p>
+            <h2>Review:</h2>
+            <p>
+                {{ course.review }}
+            </p>
 
-        <h2>Preparation</h2>
-        <p>
-            {{ course.preparation }}
-        </p>
+            <h2>Preparation</h2>
+            <p>
+                <ul>
+                {{ course.preparation }}
+                </ul>
+            </p>
+        </div>
     </body>
 </html>
