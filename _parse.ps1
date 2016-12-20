@@ -65,7 +65,7 @@ function makeIndex{
         if ($_.StartsWith('\section')) {
             $pattern.Matches($_) | ForEach-Object {
                 $_ = $_.ToString().trim("{", "}") -replace "\\&", "&"
-                $content += "</ul></div><div><h2>$_</h2><ul class='subjectlist'>"
+                $content += "</ul></div><div class='subjects'><h2>$_</h2><ul class='subjectlist'>"
             }
         } elseif ($_.StartsWith('\input')) {
             $pattern.Matches($_) | ForEach-Object {
