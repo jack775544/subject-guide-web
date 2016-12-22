@@ -50,8 +50,14 @@ function save{
     )
     $jsonPath = Join-Path '_data' -ChildPath ($itemMap.code + '.json')
     $htmlPath = Join-Path 'subjects' -ChildPath ($itemMap.code + '.html')
-    ConvertTo-Json $itemMap | Out-File $jsonPath -Encoding ascii
-    $htmlTemplate -f $itemMap.code | Out-File $htmlPath -Encoding ascii
+    if (-Not(Test-Path subjects)) {
+        New-Item -Type directory subjects
+    }
+    if (-Not(Test-Path _data)) {
+        New-Item -Type directory _data
+    }
+    ConvertTo-Json $itemMap | Out-File $jsonPath -Encoding ascii -Force
+    $htmlTemplate -f $itemMap.code | Out-File $htmlPath -Encoding ascii -Force
 }
 
 function makeIndex{
@@ -78,7 +84,7 @@ function makeIndex{
         }
     }
     $content += "</ul></div>"
-    (Get-Content -Raw _index.template) -f $content | Out-File -Encoding ascii index.html
+    (Get-Content -Raw _index.template) -f $content | Out-File -Encoding ascii index.html -Force
 }
 
 main
