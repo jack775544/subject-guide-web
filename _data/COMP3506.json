@@ -1,0 +1,11 @@
+{
+    "assessment":  "\u003cbr/\u003eexample \u0026 example% \u0026 example \u003cbr/\u003e",
+    "review":  "\u003cbr/\u003ereview here\u003cbr/\u003e",
+    "coordinator":  "Prof Yufei Tao (taoyf@itee.uq.edu.au)",
+    "contact":  "3L, 1T",
+    "score":  "4",
+    "code":  "COMP3506",
+    "title":  "Algorithms \u0026amp; Data Structures",
+    "preparation":  "\u003cbr/\u003e\u003cli\u003e thingo\u003cbr/\u003e",
+    "prereq":  "CSSE2002 + (MATH1061 or (CSSE2010 + STAT2202))"
+}
