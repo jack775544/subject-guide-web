@@ -58,6 +58,7 @@ function makeIndex{
     Param(
         $itemMap
     )
+    # Makes the index file
     $content = "<div><ul>"
     $subjectFile = Join-Path subject-guide -ChildPath tex | Join-Path -ChildPath courses | Join-Path -ChildPath subjects.tex
     $pattern = [regex] "{([\s\S]*?)}"
