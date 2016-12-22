@@ -10,6 +10,11 @@ layout: default
         <title>Subject Guide</title>
     </head>
     <body>
+		<nav class='navbar navbar-default'>
+			<div class="navbar-header">
+				<a href='index.html' class="navbar-brand">UQCS Subject Guide</a>
+			</div>
+		</nav>
         <div class='container'>
             <h1 style="page-header">UQCS Subject Guide</h1>
             <div>

@@ -12,6 +12,11 @@ layout: default
         <title>{{{{ course.title }}}}</title>
     </head>
     <body>
+		<nav class='navbar navbar-default'>
+			<div class="navbar-header">
+				<a href='../index.html' class="navbar-brand">UQCS Subject Guide</a>
+			</div>
+		</nav>
         <div class='container'>
             <h1>{{{{ course.code }}}} - {{{{ course.title }}}}</h1>
             <a href="https://www.uq.edu.au/study/course.html?course_code={{{{ course.code }}}}">UQ Link</a>
