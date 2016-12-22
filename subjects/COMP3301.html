@@ -37,7 +37,7 @@ layout: default
 
             <h2>Assessment</h2>
                 <table class='table table-striped'>
-                    {% assign lines = course.assessment | split: '<br/>' %}
+                    {% assign lines = course.assessment | replace_first: '<br/>', '' | split: '<br/>' %}
 
                     {% for line in lines %}
                         {% assign items = line | split: '&' %}
@@ -54,11 +54,9 @@ layout: default
             </p>
 
             <h2>Preparation</h2>
-            <p>
                 <ul>
                 {{ course.preparation }}
                 </ul>
-            </p>
         </div>
     </body>
 </html>
