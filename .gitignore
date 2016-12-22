@@ -6,6 +6,3 @@ _site
 *.swp
 *.swo
 .idea
-_data
-subjects
-index.html
