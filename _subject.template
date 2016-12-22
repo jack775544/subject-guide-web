@@ -31,10 +31,18 @@ layout: default
             </p>
 
             <h2>Assessment</h2>
-            <p>
-                {{{{ course.assessment }}}}
-            </p>
+                <table class='table table-striped'>
+                    {{% assign lines = course.assessment | split: '<br/>' %}}
 
+                    {{% for line in lines %}}
+                        {{% assign items = line | split: '&' %}}
+                        <tr>
+                        {{% for item in items %}}
+                            <td>{{{{ item }}}}</td>
+                        {{% endfor %}}
+                        </tr>
+                    {{% endfor %}}
+                </table>
             <h2>Review:</h2>
             <p>
                 {{{{ course.review }}}}
