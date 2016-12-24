@@ -84,6 +84,7 @@ function makeIndex{
         }
     }
     $content += "</ul></div>"
+    $content = ([Regex]'<div><ul></ul></div>').Replace($content, '', 1).ToString()
     (Get-Content -Raw _index.template) -f $content | Out-File -Encoding ascii index.html -Force
 }
 
