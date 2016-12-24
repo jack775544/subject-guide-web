@@ -6,6 +6,10 @@
     list-style-type: none;
 }
 
-.subjects {
+.header-image {
+    width: 250px;
+}
 
+.header-image-container {
+    text-align: center;
 }
