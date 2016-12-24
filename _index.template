@@ -16,7 +16,10 @@ layout: default
 			</div>
 		</nav>
         <div class='container'>
-            <h1 style="page-header">UQCS Subject Guide</h1>
+            <div class="header-image-container">
+                <img src="img/black_logo_text.png" class="header-image"/>
+            </div>
+            <h1 class="page-header" style="text-align: center">UQCS Subject Guide</h1>
             <div>
                 <p>Welcome to the 2016 UQCS Subject Guide!</p>
                 <p>This guide offers an overview of the courses undertaken by Software Engineering,

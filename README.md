@@ -14,11 +14,14 @@ A version of the UQCS subject guide made for the web.
 2. In Powershell execute `_parse.ps1`. This will generate the website from the original LaTeX subject guide.
 3. Run `jekyll build` to create the site.
 
-## Disclaimer
-This has only been tested in Powershell for Windows and not on Linux or MacOS.
-While the code *should* be portable cross system, there is no guarentee of this fact.
+#### Note
+If there is any issue running the script try running this first
+```Powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+```
 
-### Note 
+## Disclaimer
 This has had limited testing on Powershell running on Amazon Linux 
-and it seems to run fine. Please understand that this testing is very limited
-and the present point in time.
+and it seems to run fine. Please understand that testing on non-Windows platforms 
+is very limited at the present point in time. Powershell for Mac and Linux is only
+in a Preview stage at the current point in time.
