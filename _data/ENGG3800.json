@@ -1,11 +1,11 @@
 {
     "assessment":  "\u003cbr/\u003eexample \u0026 example% \u0026 example \u003cbr/\u003e",
     "review":  "\u003cbr/\u003ereview here\u003cbr/\u003e",
-    "coordinator":  "Semester 1 - Dr Poh Hillock newline Semester 2 - Mr Michael Jennings ",
-    "contact":  "3L, 1T, 1C",
+    "coordinator":  "Dr Peter O\u0027Shea (p.oshea1@uq.edu.au)",
+    "contact":  "1L, 4C",
     "score":  "4",
-    "code":  "MATH1050",
-    "title":  "Mathematical Foundations",
+    "code":  "ENGG3800",
+    "title":  "Team Project II",
     "preparation":  "\u003cbr/\u003e\u003cli\u003e thingo\u003cbr/\u003e",
-    "prereq":  "MATH1040 or SA in Year 12 Maths B"
+    "prereq":  "ENGG2800"
 }

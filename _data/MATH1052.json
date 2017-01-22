@@ -1,7 +1,7 @@
 {
     "assessment":  "\u003cbr/\u003eexample \u0026 example% \u0026 example \u003cbr/\u003e",
     "review":  "\u003cbr/\u003ereview here\u003cbr/\u003e",
-    "coordinator":  "Sem 1 Assoc Prof Diane Donovan (dmd@maths.uq.edu.au)/ Sem 2 Dr Poh Wah Hillock (p.hillock@uq.edu.au)/ Summer Sem Assoc Prof John Links (jrl@maths.uq.edu.au)",
+    "coordinator":  "Sem 1 Assoc Prof Diane Donovan newline Sem 2 Dr Poh Wah Hillock newline Summer Sem Assoc Prof John Links ",
     "contact":  "3L, 1T, 1P",
     "score":  "4",
     "code":  "MATH1052",

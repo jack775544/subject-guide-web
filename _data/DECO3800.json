@@ -7,5 +7,5 @@
     "code":  "DECO3800",
     "title":  "Design Computing Studio 3",
     "preparation":  "\u003cbr/\u003e\u003cli\u003e thingo\u003cbr/\u003e",
-    "prereq":  "DECO1800 and (CSSE2002 or DECO2300 or INFS2200)"
+    "prereq":  "DECO1800 and (CSSE2002 or newline DECO2300 or INFS2200)"
 }

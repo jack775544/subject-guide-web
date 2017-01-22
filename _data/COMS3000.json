@@ -7,5 +7,5 @@
     "code":  "COMS3000",
     "title":  "Information Security",
     "preparation":  "\u003cbr/\u003e\u003cli\u003e Complete CSSE2310 and/or COMS3200 to have a background understanding of the TCP/IP / OSI networking stack\u003cbr/\u003e\u003cli\u003e Do background reading on information security, best practices and notable threats\u003cbr/\u003e",
-    "prereq":  "For COMS3000 prereq: CSSE2310;\u003cbr/\u003eFor COMS7003 prereq: CSSE7231"
+    "prereq":  "CSSE2310"
 }
